@@ -54,7 +54,7 @@ function textClock() {
   //if minsSecs greater or equal to 57MIN and 30SEC and minsSecs less than 60MIN and 0SEC
   if (
     (minsSecs >= 5730 && minsSecs < 6000) ||
-    (minsSecs >= 0 && minsSecs < 3530)
+    (minsSecs >= 0 && minsSecs < 230)
   ) {
     //if hours doesn't equal 24 and hours doesn't equal 0
     if (hours !== 24 && hours !== 0) {
