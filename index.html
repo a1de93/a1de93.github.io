@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/favicon.ico">
+    <title>thedigitalcube_</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <!-- globe js -->
+	<script src="./globe-js/trianglify.min.js"></script>
+	<script src="./globe-js/encom-globe.min.js"></script>
+	<script src="./globe-js/grid.js"></script>
+	<script src="./globe-js/data.js"></script>
+	<script src="./globe-js/project_data.js"></script>
+</head>
+<!-- head -->
+<!-- body -->
+<body>
+    <!-- navbar -->
+    <header>
+        <nav class="navbar nav-masthead justify-content-end">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown"></div>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    HERE
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="./index.html">h o m e</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="./digitalcube.html">12,369 cubes</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="https://www.twitter.com/thedigitalcube_">t w i t t e r</a></li>
+                        <li><a class="dropdown-item" href="https://www.instagram.com/thedigitalcube_">i n s t a g r a m</a></li>
+                        <li><a class="dropdown-item" href="https://linktr.ee/thedigitalcube">l i n k t r e e</a></li>
+                    </ul>
+                </li>
+            </div>
+        </nav>
+    </header>
+    <!-- navbar -->
+    <!-- text clock -->
+    <section>
+        <div class="container-fluid-textclock">
+            <div id="text-clock">
+                <!-- line 1 -->
+                <p id="line-1">
+                    <span id="it" class="active">IT</span>L<span id="is" class="active">IS</span>AS<span id="tgif">GTFI</span>
+                </p>
+                <!-- line 1 -->
+                <!-- line 2 -->
+                <p id="line-2">
+                    AC<span id="quarter" class="desc">QUARTER</span>BS
+                </p>
+                <!-- line 2 -->
+                <!-- line 3 -->
+                <p>
+                    <span id="twenty" class="desc">TWENTY</span><span id="five" class="desc">FIVE</span>X
+                </p>
+                <!-- line 3 -->
+                <!-- line 4 -->
+                <p>
+                    <span id="half" class="desc">HALF</span>B<span id="ten" class="desc">TEN</span>F<span id="to" class="desc">TO</span>
+                </p>
+                <!-- line 4 -->
+                <!-- line 5 -->
+                <p>
+                    <span id="past" class="desc">PAST</span>ERU<span id="nine" class="hr">NINE</span>
+                </p>
+                <!-- line 5 -->
+                <!-- line 6 -->
+                <p>
+                    <span id="one" class="hr">ONE</span><span id="six" class="hr">SIX</span><span id="three" class="hr">THREE</span>
+                </p>
+                <!-- line 6 -->
+                <!-- line 7 -->
+                <p id="line-7">
+                    <span id="four" class="hr">FOUR</span><span id="five-hr" class="hr">FIVE</span><span id="two" class="hr">TWO</span>
+                </p>
+                <!-- line 7 -->
+                <!-- line 8 -->
+                <p id="line-8">
+                    <span id="eight" class="hr">EIGHT</span><span id="eleven" class="hr">ELEVEN</span>
+                </p>
+                <!-- line 8 -->
+                <!-- line 9 -->
+                <p id="line-9">
+                    <span id="seven" class="hr">SEVEN</span><span id="twelve" class="hr">TWELVE</span>
+                </p>
+                <!-- line 9 -->
+                <!-- line 10 -->
+                <p id="line-10">
+                    <span id="ten-hr" class="hr">TEN</span>SE<span id="oclock" class="desc">OCLOCK</span>
+                </p>
+                <!-- line 10 -->
+                <!-- line 11 -->
+                <p id="line-11">
+                    <span id="midnight" class="hr">MIDNIGHT</span>
+                </p>
+                <!-- line 11 -->
+            </div>
+        </div>
+    </section>
+    <!-- text clock -->
+    <!-- globe -->
+    <section>
+        <div class="container-fluid-globe">
+            <p id="intro">_</p>
+            <div id="main">
+                <svg id="rect">
+                    <path id="rectleft" />
+                    <path id="rectleft" />
+                </svg>
+                <div id="details"></div>
+            </div>
+        </div>
+    </section>
+    <!-- globe -->
+    <!-- timezone clocks -->
+    <section>
+        <div class="container-fluid-timezone">
+            <div class="flex">
+                <!-- istanbul -->
+                <div class="childcity">
+                    <p class="cityname">ISTANBUL</p>
+                    <p class="clock" timezone="+3"></p>
+                </div>
+                <!-- istanbul -->
+                <!-- seoul -->
+                <div class="childcity">
+                    <p class="cityname">SEOUL</p>
+                <p class="clock" timezone="+9"></p>
+                </div>
+                <!-- seoul -->
+                <!-- los angeles -->
+                <div class="childcity">
+                    <p class="cityname">LOSANGELES</p>
+                    <p class="clock" timezone="-7"></p>
+                </div>
+                <!-- los angeles -->
+                <!-- paris -->
+                <div class="childcity">
+                    <p class="cityname">PARIS</p>
+                    <p class="clock" timezone="+2"></p>
+                </div>
+                <!-- paris -->
+                <!-- london -->
+                <div class="childcity">
+                    <p class="cityname">LONDON</p>
+                    <p class="clock" timezone="+1"></p>
+                </div>
+                <!-- london -->
+                <!-- hong kong -->
+                <div class="childcity">
+                    <p class="cityname">HONGKONG</p>
+                    <p class="clock" timezone="+8"></p>
+                </div>
+                <!-- hong kong -->
+                <!-- new york -->
+                <div class="childcity">
+                    <p class="cityname">NEWYORK</p>
+                    <p class="clock" timezone="-4"></p>
+                </div>
+                <!-- new york -->
+                <!-- sydney -->
+                <div class="sydney">
+                    <p class="cityname">SYDNEY</p>
+                    <p class="clock" timezone="+10"></p>
+                </div>
+                <!-- sydney -->
+            </div>
+        </div>
+    </section>
+    <!-- timezone clocks -->
+    <!--js script-->
+    <script src="textclock.js"></script>
+    <script src="timezoneclock.js"></script>
+    <!-- globe js -->
+	<script type="text/javascript" src="./globe-js/intro.js"></script>
+	<script type="text/javascript" src="./globe-js/globe.js"></script>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+<!-- body -->
+<!-- All that was great in the past was ridiculed, condemned, combated, suppressed — only to emerge all the more powerfully, all the more triumphantly from the struggle. -->
+<!-- As I review the events of my past life I realize how subtle are the influences that shape our destinies. -->
+<!-- If you only knew the magnificence of the 3, 6 and 9, then you would have the key to the universe. -->
+</html>

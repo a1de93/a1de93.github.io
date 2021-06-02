@@ -1,0 +1,298 @@
+/* overall look */
+html,
+body {
+  background: #000;
+  color: #fff;
+  font-family: Helvetica, Arial;
+  text-align: justify;
+  width: 100%;
+  min-height: 70vh;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+/* overall look */
+/****************************************************************/
+/* timezone clocks */
+.flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+.childcity {
+  flex: 1 1 calc(10% - 8px);
+  height: 50%;
+  padding: 3px 0;
+  width: auto;
+  display: block;
+}
+.clock {
+  text-align: center;
+}
+.cityname {
+  color: #fff;
+  text-align: center;
+  padding: 0.3rem;
+}
+p {
+  text-align: center;
+}
+.container-fluid-timezone {
+  padding: 0% 15% 4% 15%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+}
+/* timezone clocks */
+/****************************************************************/
+/* navbar */
+.nav-masthead .nav-link {
+  color: #333;
+  transition: color 0.4s ease-out;
+  -ms-transition: color 0.4s ease-out;
+  -moz-transition: color 0.4s ease-out;
+  -webkit-transition: color 0.4s ease-out;
+  letter-spacing: 12.1px;
+  font-size: 17px;
+}
+.nav-masthead .nav-link {
+  padding: 0.08rem;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+}
+.nav-masthead .active {
+  color: #000;
+}
+/* dropdown menu */
+.dropdown-menu {
+  color: #333 !important;
+  background-color: #000 !important;
+  min-width: 5rem;
+  margin: 0;
+  line-height: 0.5rem;
+  position: relative;
+}
+.dropdown-item {
+  text-align: center;
+}
+a {
+  color: #333 !important;
+}
+#dropdown-divider {
+  color: #333 !important;
+}
+.dropdown-item:active {
+  background-color: #fff;
+  padding: 0.3rem;
+}
+.dropdown-item:hover {
+  background-color: #fff;
+  padding: 0.5rem;
+}
+header {
+  position: relative;
+  z-index: 50;
+}
+/* navbar */
+/****************************************************************/
+/* text clock */
+.container-fluid-textclock {
+  padding: 8% 15% 2% 15%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+}
+p,
+span {
+  color: #333;
+  transition: color 0.4s ease-out;
+  -ms-transition: color 0.4s ease-out;
+  -moz-transition: color 0.4s ease-out;
+  -webkit-transition: color 0.4s ease-out;
+  letter-spacing: 12.1px;
+  font-size: 17px;
+}
+
+#midnight {
+  color: #000;
+  letter-spacing: 23px;
+}
+
+#it,
+#is,
+span.active {
+  color: #fff !important;
+  transition: color 0.4s ease-out;
+  -ms-transition: color 0.4s ease-out;
+  -moz-transition: color 0.4s ease-out;
+  -webkit-transition: color 0.4s ease-out;
+}
+
+#text-clock {
+  width: 242px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+#line-1,
+#line-1 span {
+  letter-spacing: 13.9px;
+}
+#line-2,
+#line-2 span {
+  letter-spacing: 11.3px;
+}
+#line-7,
+#line-7 span {
+  letter-spacing: 11.8px;
+}
+#line-8,
+#line-8 span {
+  letter-spacing: 12.3px;
+}
+#line-9,
+#line-9 span {
+  letter-spacing: 11.6px;
+}
+#line-10,
+#line-10 span {
+  letter-spacing: 11.6px;
+}
+
+.hidden {
+  display: none;
+}
+/* text clock */
+/****************************************************************/
+/* digitalcube.html */
+#everything-digitalcubepage {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  padding: 0.01rem;
+  margin: 1rem;
+}
+
+#viewmore {
+  padding-top: 0.5rem;
+}
+
+a,
+a:hover,
+a:visited,
+a:focus,
+a:active {
+  color: #333 !important;
+  text-decoration: none;
+  background-color: #000;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none !important;
+}
+/****************************************************************/
+/* intro text and globe */
+canvas {
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+h1.top {
+  top: 0;
+  transform: translateX(-50%);
+}
+#main {
+  opacity: 0;
+  transition: 0.5s;
+  color: white;
+  margin-top: 60px;
+}
+#rect {
+  transform: translateY(100px);
+  overflow: visible;
+  position: relative;
+  left: 20px;
+  transition: transform 0.2s linear;
+}
+
+#rectleft,
+#rectright {
+  transform: translateX(1px) translateY(1px);
+  stroke-width: 2px;
+  stroke: transparent;
+  fill: transparent;
+}
+.container-fluid-globe {
+  padding: 8% 15% 0% 15%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+}
+/****************************************************************/
+/* mobile responsive */
+@media (max-width: 1028px) {
+  /* timezone clocks */
+  .flex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  /* textclock */
+  #text-clock {
+    max-height: 100%;
+  }
+  .container-fluid-textclock {
+    width: 100%;
+  }
+
+  /* globe */
+  .container-fluid-globe {
+    padding: 50% 15% 0% 15%;
+  }
+
+  /* digitalcube.html */
+  .countdown-ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: row;
+    text-align: left;
+  }
+  #headline {
+    padding: 90% 15% 5% 15%;
+  }
+  .viewmore {
+    padding-bottom: 15%;
+  }
+}
