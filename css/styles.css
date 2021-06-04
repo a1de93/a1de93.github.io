@@ -194,7 +194,7 @@ ul {
 li {
   display: inline;
   padding: 0.01rem;
-  margin: 1rem;
+  margin: 0.3rem;
 }
 
 #viewmore {
@@ -290,7 +290,7 @@ h1.top {
     text-align: left;
   }
   #headline {
-    padding: 90% 15% 5% 15%;
+    padding: 75% 15% 5% 15%;
   }
   .viewmore {
     padding-bottom: 15%;
