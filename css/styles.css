@@ -101,10 +101,11 @@ header {
 /****************************************************************/
 /* text clock */
 .container-fluid-textclock {
-  padding: 8% 15% 2% 15%;
+  padding: 8% 15% 0.7% 15%;
   width: 100%;
   left: 50%;
   top: 50%;
+  margin-bottom: 15%;
 }
 p,
 span {
@@ -250,10 +251,11 @@ h1.top {
   fill: transparent;
 }
 .container-fluid-globe {
-  padding: 8% 15% 0% 15%;
+  padding: 0% 15% 0% 15%;
   width: 100%;
   left: 50%;
   top: 50%;
+  margin-top: 0%;
 }
 /****************************************************************/
 /* mobile responsive */
