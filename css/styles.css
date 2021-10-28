@@ -265,7 +265,7 @@ h1.top {
   position: absolute;
   left: 50%;
   top: 50%;
-  padding-top: 80px;
+  padding-top: 7%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
@@ -292,7 +292,12 @@ h1.top {
 }
 /****************************************************************/
 /* now.html */
+#clock-button {
+  background: none;
+  border: none;
 
+  transform: translateX(100%);
+}
 /****************************************************************/
 /* mobile responsive */
 @media (max-width: 1028px) {
