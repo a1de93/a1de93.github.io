@@ -10,7 +10,7 @@ globe = new ENCOM.Globe(
     pinColor: "#39FF14",
     satelliteColor: "#39FF14",
     scale: 1.0,
-    dayLength: 45000,
+    dayLength: 50000,
     introLinesDuration: 2000,
     maxPins: 500,
     maxMarkers: 4,
