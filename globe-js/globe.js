@@ -55,7 +55,7 @@ let initGlobe = () => {
   // constellation circle dot things
   var constellation = [];
   var opts = {
-    coreColor: "#39FF14",
+    coreColor: "#99FEFF",
     numWaves: 8,
   };
   var alt = 1;
