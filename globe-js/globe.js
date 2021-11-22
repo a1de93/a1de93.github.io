@@ -10,7 +10,7 @@ globe = new ENCOM.Globe(
     pinColor: "#99FEFF",
     satelliteColor: "#99FEFF",
     scale: 1.0,
-    dayLength: 60000,
+    dayLength: 90000,
     introLinesDuration: 2000,
     maxPins: 500,
     maxMarkers: 4,
@@ -56,7 +56,7 @@ let initGlobe = () => {
   var constellation = [];
   var opts = {
     coreColor: "#99FEFF",
-    numWaves: 8,
+    numWaves: 9,
   };
   var alt = 1;
 
