@@ -30,6 +30,10 @@ body {
   width: auto;
   display: block;
 }
+.childcity .citynameNY {
+  color: #99FEFF;
+  opacity: .8;
+}
 .clock {
   text-align: center;
 }
@@ -50,51 +54,62 @@ p {
 /* timezone clocks */
 /****************************************************************/
 /* navbar */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* remove the gap so it doesn't close */
+}
 .nav-masthead .nav-link {
-  color: #333;
+  color: #99FEFF !important;
+  opacity: .8 !important;
+  padding-top: 3rem !important;
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
   transition: color 0.4s ease-out;
   -ms-transition: color 0.4s ease-out;
   -moz-transition: color 0.4s ease-out;
   -webkit-transition: color 0.4s ease-out;
-  letter-spacing: 12.1px;
+  letter-spacing: 11.5px;
   font-size: 17px;
-}
-.nav-masthead .nav-link {
-  padding: 0.08rem;
-  padding-top: 0.5rem;
-  padding-right: 1rem;
-}
-.nav-masthead .active {
-  color: #000;
+  white-space: nowrap;
 }
 /* dropdown menu */
 .dropdown-menu {
-  color: #333 !important;
-  background-color: #000 !important;
+  width: 10rem;
+  height: 14.5rem;
+  color: #fff !important;
+  border-radius: 12px !important;
+  background-color: #fff !important;
   min-width: 5rem;
   margin: 0;
   line-height: 0.5rem;
   position: relative;
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+}
+.dropdown-toggle::after {
+  display: none;
 }
 .dropdown-item {
-  text-align: center;
+  text-align: right;
+  padding-left: .3rem;
+  padding-top: .8rem;
+  padding-bottom: .8rem;
 }
 a {
   color: #333 !important;
 }
 #dropdown-divider {
-  color: #333 !important;
-}
-.dropdown-item:active {
-  background-color: #fff;
-  padding: 0.3rem;
+  color: #fff !important;
 }
 .dropdown-item:hover {
-  background-color: #fff;
-  padding: 0.5rem;
+  background-color: #99FEFF;
+  opacity: .5;
+  padding-top: .8rem;
+  padding-bottom: .8rem;
 }
 header {
-  position: relative;
+  position: absolute;
+  right: .9rem;
   z-index: 50;
 }
 /* navbar */
@@ -105,7 +120,7 @@ header {
   width: 100%;
   left: 50%;
   top: 50%;
-  margin-bottom: 15%;
+  margin-bottom: 19%;
 }
 p,
 span {
@@ -194,8 +209,6 @@ ul {
 
 li {
   display: inline;
-  padding: 0.01rem;
-  margin: 0.3rem;
 }
 
 #viewmore {
@@ -233,10 +246,8 @@ h1.top {
   opacity: 0;
   transition: 0.5s;
   color: white;
-  margin-top: 60px;
 }
 #rect {
-  transform: translateY(100px);
   overflow: visible;
   position: relative;
   left: 20px;
@@ -251,11 +262,11 @@ h1.top {
   fill: transparent;
 }
 .container-fluid-globe {
+  position: relative;
   padding: 0% 15% 0% 15%;
   width: 100%;
-  left: 50%;
-  top: 50%;
-  margin-top: 0%;
+  /* left: 50%; */
+  /* top: 50%; */
 }
 /****************************************************************/
 /* twitter page */
@@ -264,31 +275,16 @@ h1.top {
   height: 100%;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 75%;
   padding-top: 7%;
+  margin: 0;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-
-.paragraphs {
-  float: left;
-  width: 50%;
-  position: absolute;
-}
-.twitter {
-  float: right;
-  padding: 15px 15px 15px 30px;
-  width: 50%;
-  position: absolute;
-  transform: translateX(100%);
-}
-
-.comp-text {
-  text-align: left;
-  padding: 15px 15px 15px 30px;
-  position: relative;
 }
 /****************************************************************/
 /* now.html */
@@ -362,5 +358,16 @@ h1.top {
 
   .first-para {
     padding-top: 20%;
+  }
+
+  /*navbar*/
+  .nav-masthead .nav-link {
+    padding-top: 3rem !important;
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+    transition: color 0.4s ease-out;
+    -ms-transition: color 0.4s ease-out;
+    -moz-transition: color 0.4s ease-out;
+    -webkit-transition: color 0.4s ease-out;
   }
 }
