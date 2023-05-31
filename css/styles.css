@@ -276,12 +276,10 @@ h1.top {
   height: 100%;
   position: absolute;
   left: 50%;
-  top: 75%;
-  padding-top: 7%;
-  margin: 0;
+  top: 50%;
+  padding-top: 200px;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
@@ -297,7 +295,13 @@ h1.top {
 }
 /****************************************************************/
 /* mobile responsive */
-@media (max-width: 1028px) {
+@media only screen and (max-width: 1028px) {
+  /*html body*/
+  html, body {
+    margin: 0;
+    height: 100%;
+  }
+  
   /* timezone clocks */
   .flex {
     display: grid;
@@ -395,15 +399,5 @@ h1.top {
   .container-fluid-timezone {
     font-size: 9px;
     letter-spacing: 9px;
-  }
-
-  html, body {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-  }
-  .modal {
-    width: 50vw;
-    height: 50vh;
-    height: calc(var(--vh, 1vh) * 50);
   }
 }
