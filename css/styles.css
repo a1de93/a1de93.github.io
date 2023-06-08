@@ -26,8 +26,8 @@ body {
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #333;
-  opacity: .9;
+  background: #99fdffb5;
+  opacity: .1;
 }
 /****************************************************************/
 /* timezone clocks */
