@@ -91,7 +91,7 @@ p {
 /* dropdown menu */
 .dropdown-menu {
   width: 10rem;
-  height: 16.3rem;
+  height: 14.5rem;
   color: #fff !important;
   border-radius: 9px !important;
   background-color: #fff !important;
@@ -100,7 +100,7 @@ p {
   line-height: 0.5rem;
   position: relative;
   padding-top: .6rem;
-  padding-bottom: .6rem;
+  padding-bottom: .3rem;
 }
 .dropdown-toggle::after {
   display: none;
