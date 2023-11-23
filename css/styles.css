@@ -79,19 +79,19 @@ p {
   opacity: .8 !important;
   padding-top: 3rem !important;
   padding-right: 3rem !important;
-  padding-left: 3rem !important;
+  padding-left: 5rem !important;
   transition: color 0.4s ease-out;
   -ms-transition: color 0.4s ease-out;
   -moz-transition: color 0.4s ease-out;
   -webkit-transition: color 0.4s ease-out;
-  letter-spacing: 11.5px;
+  letter-spacing: 9px; /*11.5*/
   font-size: 17px;
   white-space: nowrap;
 }
 /* dropdown menu */
 .dropdown-menu {
   width: 10rem;
-  height: 14.5rem;
+  height: 16.3rem;
   color: #fff !important;
   border-radius: 9px !important;
   background-color: #fff !important;
@@ -126,7 +126,7 @@ a {
 }
 header {
   position: absolute;
-  right: .9rem;
+  right: .3rem;
   z-index: 50;
 }
 /* navbar */
@@ -302,6 +302,22 @@ h1.top {
   transform: translate(-50%, -50%);
 }
 /****************************************************************/
+/* twitter page */
+#questions-section {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding-top: 9%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/****************************************************************/
 /* now.html */
 #clock-button {
   background: none;
@@ -405,7 +421,7 @@ h1.top {
   .nav-masthead .nav-link {
     padding-top: 3rem !important;
     padding-right: 1.5rem !important;
-    padding-left: 1.5rem !important;
+    padding-left: 3rem !important;
     transition: color 0.4s ease-out;
     -ms-transition: color 0.4s ease-out;
     -moz-transition: color 0.4s ease-out;
