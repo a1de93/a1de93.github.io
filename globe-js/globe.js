@@ -34,23 +34,23 @@ let initGlobe = () => {
   globe.init();
   animate();
   //gets ip api
-  fetch("https://ipapi.co/json/")
+  fetch("https://ipapi.co/json/") //https://ipapi.co/json/
     .then((r) => r.text())
     .then((r) => {
       let loc = JSON.parse(r);
       globe.addMarker(loc.latitude, loc.longitude, loc.ip);
-      //gets nyc ip address
-      // fetch("https://ip-api.io/json/161.185.160.93");
-      // .then((r) => r.text())
-      // .then((r) => {
-      //   let loc2 = JSON.parse(r);
-      //   globe.addMarker(
-      //     loc2.latitude,
-      //     loc2.longitude,
-      //     loc2.ip,
-      //     Math.abs(loc.lon - loc2.lon) > 25
-      //   );
-      // });
+      //gets seoul ip address
+      fetch("https://ipapi.co/140.241.27.22/json/")
+      .then((r) => r.text())
+      .then((r) => {
+        let loc2 = JSON.parse(r);
+        globe.addMarker(
+          loc2.latitude,
+          loc2.longitude,
+          loc2.ip,
+          Math.abs(loc.lon - loc2.lon) > 25
+        );
+      });
     });
   // constellation circle dot things
   var constellation = [];
