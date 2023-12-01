@@ -40,7 +40,7 @@ let initGlobe = () => {
       let loc = JSON.parse(r);
       globe.addMarker(loc.latitude, loc.longitude, loc.ip);
       //gets seoul ip address
-      fetch("https://ipapi.co/140.241.27.22/json/")
+      fetch("https://ipapi.co/192.80.65.177/json/")
       .then((r) => r.text())
       .then((r) => {
         let loc2 = JSON.parse(r);
