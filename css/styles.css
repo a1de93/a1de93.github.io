@@ -621,6 +621,8 @@ h1.top {
   .container-fluid-timezone {
     font-size: 9px;
     letter-spacing: 9px;
+    padding-bottom: 9%;
+    
   }
   /* globe */
   .container-fluid-globe {
