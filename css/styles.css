@@ -726,12 +726,14 @@ h1.top {
     backdrop-filter: blur( 9px );
     -webkit-backdrop-filter: blur( 9px );
     /* border-radius: 0px 10px 10px 0px; */
-    border: 1px solid #99F3FF;
+    /* border: 1px solid #99F3FF; */
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
   .btn:hover,
   .btn:focus,
   .btn:active {
-  border: solid 1px #99F3FF;
+  /* border: solid 1px #99F3FF; */
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   border-radius: 21px;
 }
   /********************************/
