@@ -682,6 +682,12 @@ h1.top {
     letter-spacing: -0.001em;
     border-radius: 6px;
   }
+  .footer-link:hover {
+    font-size: 135%;
+    border: solid 1px #99F3FF;
+    color: #000;
+    border-radius: 6px;
+  }
   /********************************/
   /* composition.html */
   /********************************/
