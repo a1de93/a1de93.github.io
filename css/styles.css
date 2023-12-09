@@ -691,9 +691,17 @@ h1.top {
   }
   .footer-link:hover {
     font-size: 135%;
-    border: solid 1px #99F3FF;
+    /* border: solid 1px #99F3FF; */
     color: #000;
     border-radius: 21px;
+    /*glassmorphism*/
+    background: rgba( 255, 255, 255, 0.15 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    /* border-radius: 0px 10px 10px 0px; */
+    /* border: 1px solid #99F3FF; */
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
   /********************************/
   /* composition.html */
