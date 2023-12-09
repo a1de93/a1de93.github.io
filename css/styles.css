@@ -175,8 +175,10 @@ p {
 .btn {
   font-size: 145%;
   border: solid 1px none;
-  border-radius: 6px;
+  border-radius: 9px;
   padding: 3.3px 18px 3.3px 18px;
+  letter-spacing: -12.1px;
+  letter-spacing: 0.3em;
 }
 
 .btn:hover,
@@ -552,6 +554,8 @@ span.active {
   border-radius: 9px;
   color: #000;
   border: solid 1px #000;
+  letter-spacing: -12.1px;
+  letter-spacing: 0.3em;
 }
 
 .footer-link:hover {
@@ -611,6 +615,7 @@ h1.top {
   margin-right: auto;
   width: 40%;
   padding-top: 9%;
+  padding-bottom: 2rem;
 }
 /****************************************************************/
 /* now.html */
@@ -681,6 +686,8 @@ h1.top {
     font-size: 135%;
     letter-spacing: -0.001em;
     border-radius: 6px;
+    letter-spacing: -12.1px;
+    letter-spacing: 0.2em;
   }
   .footer-link:hover {
     font-size: 135%;
@@ -710,7 +717,8 @@ h1.top {
   }
   .btn {
     font-size: 130%;
-    letter-spacing: -0.001em;
+    letter-spacing: -12.1px;
+    letter-spacing: 0.2em;
     border-radius: 6px;
     /*glassmorphism*/
     background: rgba( 255, 255, 255, 0.15 );
