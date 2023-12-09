@@ -685,7 +685,7 @@ h1.top {
   .footer-link {
     font-size: 135%;
     letter-spacing: -0.001em;
-    border-radius: 6px;
+    border-radius: 18px;
     letter-spacing: -12.1px;
     letter-spacing: 0.2em;
   }
@@ -693,7 +693,7 @@ h1.top {
     font-size: 135%;
     border: solid 1px #99F3FF;
     color: #000;
-    border-radius: 6px;
+    border-radius: 18px;
   }
   /********************************/
   /* composition.html */
@@ -719,7 +719,7 @@ h1.top {
     font-size: 130%;
     letter-spacing: -12.1px;
     letter-spacing: 0.2em;
-    border-radius: 6px;
+    border-radius: 18px;
     /*glassmorphism*/
     background: rgba( 255, 255, 255, 0.15 );
     /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
@@ -732,7 +732,7 @@ h1.top {
   .btn:focus,
   .btn:active {
   border: solid 1px #99F3FF;
-  border-radius: 6px;
+  border-radius: 18px;
 }
   /********************************/
   /*questions.html*/
