@@ -288,7 +288,7 @@ p {
   position:absolute;
   width:600px;
   height:36px;
-  left:15%;
+  left:9%;
   top:90%;
   margin-left:-300px;
   overflow:visible;
@@ -313,7 +313,7 @@ p {
   -o-transform:rotate(180deg);
   -moz-transform:rotate(180deg);
   -webkit-transform:rotate(180deg);
-  color:#99F3FF;
+  color:#FFF;
 }
 
 #sfumato div:nth-child(2) {
@@ -672,6 +672,11 @@ h1.top {
   .cityname {
     padding: 0px;
   }
+  p,
+  span {
+  letter-spacing: 9px;
+  font-size: 15px;
+}
   /*index.html*/
   /********************************/
   /* digitalcube.html */
@@ -742,9 +747,12 @@ h1.top {
   .btn:hover,
   .btn:focus,
   .btn:active {
-  /* border: solid 1px #99F3FF; */
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  border-radius: 21px;
+    border-radius: 21px;
+    /*glassmorphism*/
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
   /********************************/
   /*questions.html*/
