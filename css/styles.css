@@ -89,15 +89,22 @@ body {
 ::-webkit-scrollbar {
   width: 3px;
   height: 30px;
+  scroll-behavior: smooth;
+  overflow: auto;
+  border-radius: 18px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #000;
+  background: transparent;
+  scroll-behavior: smooth;
+    overflow: auto;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #99fdffb5;
+  background: #333; /*#99fdffb5;*/
   opacity: .1;
+  scroll-behavior: smooth;
+    overflow: auto;
 }
 /****************************************************************/
 /* timezone clocks */
@@ -715,7 +722,8 @@ h1.top {
   /********************************/
   /* navbar */
   .sidenav {
-    width: 50%;
+    width: 40%;
+    height: 15%;
   }
   .active .sidenav {
     width: 100%;
@@ -729,6 +737,17 @@ h1.top {
   .items li a {
     font-size: 24px;
     padding: 0 5px;
+  }
+  .items {
+    animation: fadeInAnimation ease 1s;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
   }
   .btn {
     font-size: 130%;
