@@ -663,9 +663,15 @@ h1.top {
 }
 /****************************************************************/
 /* composition page */
-.composition {
-  padding-top: 25%;
+ .composition-section {
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
+
 /****************************************************************/
 /* questions bot page */
 .questions-section {
@@ -693,7 +699,7 @@ img {
   align-content: space-between;
   overflow: hidden;
   
-  height: 324vw; /*Sized based on vw to expand properly 310vw*/
+  height: 318vw; /*Sized based on vw to expand properly 310vw*/
   
   .gallery-image {
     width: 33.3%;
@@ -939,8 +945,6 @@ img {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
   /********************************/
-  /* composition.html */
-  /********************************/
   /* navbar */
   .sidenav {
     width: 40%;
@@ -994,7 +998,7 @@ img {
   /********************************/
   /*gallery*/
   .gallery {
-    height: 338vw;
+    height: 317vw;
   }
   /*gallery*/
   /********************************/
