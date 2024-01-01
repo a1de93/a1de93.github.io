@@ -995,6 +995,9 @@ img {
     -webkit-backdrop-filter: blur( 9px );
     border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
+#sfumato {
+  top:87%;
+}
   /********************************/
   /*gallery*/
   .gallery {
