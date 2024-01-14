@@ -136,7 +136,7 @@ body {
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #333; /*#99fdffb5;*/
+  background: #333;
   opacity: .1;
   scroll-behavior: smooth;
     overflow: auto;
@@ -170,7 +170,7 @@ body {
 .cityname {
   color: #fff;
   text-align: center;
-  padding: 0.3rem;
+  padding: 0.3rem 0rem 0rem 0.3rem;
 }
 p {
   text-align: center;
@@ -181,6 +181,113 @@ p {
   left: 50%;
   top: 50%;
 }
+/*korean text on timezone clocks*/
+#kr-newyork {
+  color: #fff;
+  font-size: 17.1px;
+}
+#kr-newyork:after {
+  content: "";
+  animation: kr-newyork 24s linear infinite;
+}
+@keyframes kr-newyork {
+  0% {content: "뉴욕";}
+  50% {content: "NEWYORK";}
+  100% {content: "뉴욕";}
+}
+#kr-seoul {
+  color: #fff;
+  font-size: 17.1px;
+}
+#kr-seoul:after {
+  content: "";
+  animation: kr-seoul 24s linear infinite;
+}
+@keyframes kr-seoul {
+  0% {content: "서울";}
+  50% {content: "SEOUL";}
+  100% {content: "서울";}
+}
+#kr-beirut {
+  color: #fff;
+  font-size: 17.1px;
+}
+#kr-beirut:after {
+  content: "";
+  animation: kr-beirut 30s linear infinite;
+}
+@keyframes kr-beirut {
+  0% {content: "BEIRUT";}
+  50% {content: "베이루트";}
+  100% {content: "BEIRUT";}
+}
+#kr-london {
+  color: #fff;
+  font-size: 17.1px;
+}
+#kr-london:after {
+  content: "";
+  animation: kr-london 32s linear infinite;
+}
+@keyframes kr-london {
+  0% {content: "런던";}
+  50% {content: "LONDON";}
+  100% {content: "런던";}
+}
+#kr-sydney {
+  color: #fff;
+  font-size: 17.1px;
+}
+#kr-sydney:after {
+  content: "";
+  animation: kr-sydney 30s linear infinite;
+}
+@keyframes kr-sydney {
+  0% {content: "SYDNEY";}
+  50% {content: "시드니";}
+  100% {content: "SYDNEY";}
+}
+#kr-hongkong {
+  color: #fff;
+  font-size: 17.1px;
+}
+#kr-hongkong:after {
+  content: "";
+  animation: kr-hongkong 30s linear infinite;
+}
+@keyframes kr-hongkong {
+  0% {content: "HONGKONG";}
+  50% {content: "홍콩";}
+  100% {content: "HONGKONG";}
+}
+#kr-paris {
+  color: #fff;
+  font-size: 17.1px;
+}
+#kr-paris:after {
+  content: "";
+  animation: kr-paris 32s linear infinite;
+}
+@keyframes kr-paris {
+  0% {content: "PARIS";}
+  50% {content: "파리";}
+  100% {content: "PARIS";}
+}
+#kr-losangeles {
+  color: #fff;
+  font-size: 17.1px;
+}
+#kr-losangeles:after {
+  content: "";
+  animation: kr-losangeles 42s infinite;
+}
+@keyframes kr-losangeles {
+  0% {content: "LOSANGELES";}
+  50% {content: "로스앤젤레스";}
+  100% {content: "LOSANGELES";}
+}
+/*korean text on timezone clocks*/
+
 /* timezone clocks */
 /****************************************************************/
 /* navbar */
@@ -542,6 +649,17 @@ span.active {
   -moz-transition: color 0.4s ease-out;
   -webkit-transition: color 0.4s ease-out;
 }
+#is:after {
+  content: "IS";
+  animation: kr-is 18s linear infinite;
+  
+}
+@keyframes kr-is {
+  0%, 15% {content: "잼";}
+  16%, 59% {content: "IS";}
+  60%, 75% {content: "잼";}
+  76%, 100% {content: "IS";}
+}
 
 #text-clock {
   width: 242px;
@@ -877,7 +995,6 @@ img {
     font-size: 9px;
     letter-spacing: 9px;
     padding-bottom: 8%;
-    
   }
   /* globe */
   .container-fluid-globe {
@@ -899,9 +1016,6 @@ img {
   /*index.html*/
   /********************************/
   /* digitalcube.html */
-  .digitalcube-page {
-    
-  }
   .dc-one {
     margin: 0;
     position: absolute;
@@ -1002,6 +1116,181 @@ img {
   /*gallery*/
   .gallery {
     height: 317vw;
+    .portfolio-image-one {
+      animation: image-one 18s 1 ease-in;
+    }
+    .portfolio-image-two {
+      animation: image-two 18s 1 linear;
+    }
+    .portfolio-image-three {
+      animation: image-three 18s 1 linear;
+    }
+    .portfolio-image-four {
+      animation: image-four 18s 1 linear;
+    }
+    .portfolio-image-five {
+      animation: image-five 18s 1 linear;
+    }
+    .portfolio-image-six {
+      animation: image-six 18s 1 linear;
+    }
+    .portfolio-image-seven {
+      animation: image-seven 18s 1 linear;
+    }
+    .portfolio-image-eight {
+      animation: image-eight 18s 1 linear;
+    }
+    .portfolio-image-nine {
+      animation: image-nine 18s 1 linear;
+    }
+  }
+
+  @keyframes image-one {
+    0%, 2% {
+      opacity: 1;
+    }
+    3%, 18% {
+      opacity: 1;
+    }
+    19%, 20% {
+      opacity: .9;
+    }
+    21%, 100% {
+      opacity: .9;
+    }
+  }
+  @keyframes image-two {
+    0%, 18% {
+      opacity: .9;
+    }
+    19%, 20% {
+      opacity: 1;
+    }
+    21%, 29% {
+      opacity: 1;
+    }
+    30%, 31% {
+      opacity: .9;
+    }
+    32%, 100% {
+      opacity: .9;
+    }
+  }
+  @keyframes image-three {
+    0%, 28% {
+      opacity: .9;
+    }
+    29%, 30% {
+      opacity: 1;
+    }
+    31%, 39% {
+      opacity: 1;
+    }
+    40%, 41% {
+      opacity: .9;
+    }
+    42%, 100% {
+      opacity: .9;
+    }
+  }
+  @keyframes image-four {
+    0%, 38% {
+      opacity: .9;
+    }
+    39%, 40% {
+      opacity: 1;
+    }
+    41%, 49% {
+      opacity: 1;
+    }
+    50%, 51% {
+      opacity: .9;
+    }
+    52%, 100% {
+      opacity: .9;
+    }
+  }
+  @keyframes image-five {
+    0%, 48% {
+      opacity: .9;
+    }
+    49%, 50% {
+      opacity: 1;
+    }
+    51%, 59% {
+      opacity: 1;
+    }
+    60%, 61% {
+      opacity: .9;
+    }
+    62%, 100% {
+      opacity: .9;
+    }
+  }
+  @keyframes image-six {
+    0%, 58% {
+      opacity: .9;
+    }
+    59%, 60% {
+      opacity: 1;
+    }
+    61%, 69% {
+      opacity: 1;
+    }
+    70%, 71% {
+      opacity: .9;
+    }
+    72%, 100% {
+      opacity: .9;
+    }
+  }
+  @keyframes image-seven {
+    0%, 68% {
+      opacity: .9;
+    }
+    69%, 70% {
+      opacity: 1;
+    }
+    71%, 79% {
+      opacity: 1;
+    }
+    80%, 81% {
+      opacity: .9;
+    }
+    82%, 100% {
+      opacity: .9;
+    }
+  }
+  @keyframes image-eight {
+    0%, 78% {
+      opacity: .9;
+    }
+    79%, 80% {
+      opacity: 1;
+    }
+    81%, 89% {
+      opacity: 1;
+    }
+    90%, 91% {
+      opacity: .9;
+    }
+    92%, 100% {
+      opacity: .9;
+    }
+  }
+  @keyframes image-nine {
+    0%, 88% {
+      opacity: .9;
+    }
+    89%, 90% {
+      opacity: 1;
+    }
+    91%, 99% {
+      opacity: 1;
+    }
+    100% {
+      opacity: .9;
+    }
   }
   /*gallery*/
   /********************************/
