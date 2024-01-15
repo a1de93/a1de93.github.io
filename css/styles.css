@@ -1117,31 +1117,31 @@ img {
   .gallery {
     height: 317vw;
     .portfolio-image-one {
-      animation: image-one 18s infinite ease-in;
+      animation: image-one 30s infinite ease-in;
     }
     .portfolio-image-two {
-      animation: image-two 18s infinite linear;
+      animation: image-two 30s infinite linear;
     }
     .portfolio-image-three {
-      animation: image-three 18s infinite linear;
+      animation: image-three 30s infinite linear;
     }
     .portfolio-image-four {
-      animation: image-four 18s infinite linear;
+      animation: image-four 30s infinite linear;
     }
     .portfolio-image-five {
-      animation: image-five 18s infinite linear;
+      animation: image-five 30s infinite linear;
     }
     .portfolio-image-six {
-      animation: image-six 18s infinite linear;
+      animation: image-six 30s infinite linear;
     }
     .portfolio-image-seven {
-      animation: image-seven 18s infinite linear;
+      animation: image-seven 30s infinite linear;
     }
     .portfolio-image-eight {
-      animation: image-eight 18s infinite linear;
+      animation: image-eight 30s infinite linear;
     }
     .portfolio-image-nine {
-      animation: image-nine 18s infinite linear;
+      animation: image-nine 30s infinite linear;
     }
   }
 
