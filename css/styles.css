@@ -1065,7 +1065,7 @@ img {
     width: 100%;
   }
   .left-bg {
-    height: 87vh;
+    height: 90vh;
     width: 100%;
   }
   /*index.html layout*/
@@ -1095,7 +1095,7 @@ img {
   }
   .container-fluid-timezone-mobile {
     display: grid;
-    margin-top: 78vh;
+    margin-top: 80vh;
     padding-bottom: 9%;
   }
   .mobile-only {
