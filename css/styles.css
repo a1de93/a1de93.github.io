@@ -1103,7 +1103,7 @@ img {
   }
   /* globe */
   .container-fluid-globe {
-    margin-top: -32vh;
+    margin-top: -31vh;
     margin-bottom: -6%;
     overflow-x: hidden;
   }
@@ -1116,7 +1116,7 @@ img {
   }
   .cityname {
     padding: 0px;
-    margin-bottom: 1rem;
+    margin-bottom: .6rem;
   }
   p,
   span {
