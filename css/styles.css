@@ -142,44 +142,97 @@ body {
     overflow: auto;
 }
 /****************************************************************/
+/*index.html*/
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  height: 100vh;
+  box-sizing: border-box;
+  position: absolute;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left {
+  left: 0;
+}
+.left-bg {
+  background-image: url("../images/younggardener.jpg");
+  /* Full height */
+  height: 100%;
+  overflow-y: hidden; 
+  overflow-x: clip; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .3;
+  width: 100%;
+  overflow-y: hidden;
+}
+.right {
+  right: 0;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*split index.html half*/
+/****************************************************************/
 /* timezone clocks */
 .flex {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-auto-flow: row;
   min-width: 0;
   min-height: 0;
   overflow: hidden;
 }
 .childcity {
-  flex: 1 1 calc(10% - 8px);
+  /* flex: 1 1 calc(10% - 8px); */
   height: 50%;
-  padding: 3px 0;
   width: auto;
   display: block;
+  letter-spacing: -2px;
+  margin-bottom: .9rem;
 }
 .childcity .citynameNY { /*also includes seoul*/
   background: #FFFFFF;
   background: linear-gradient(to right, #FFFFFF 0%, #99F3FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 0;
 }
 .clock {
   text-align: center;
+  margin-bottom: 0rem;
 }
 .cityname {
   color: #fff;
   text-align: center;
-  padding: 0.3rem 0rem 0rem 0.3rem;
+  margin-bottom: 0;
 }
-p {
+.cityname .clock {
   text-align: center;
 }
 .container-fluid-timezone {
-  padding: 0% 15% 3% 15%;
   width: 100%;
   left: 50%;
   top: 50%;
+  visibility: hidden;
+  opacity: 0;
+  animation: toggleTimezoneClock 30s infinite;
+}
+.container-fluid-timezone-mobile {
+  display: none;
 }
 /*korean text on timezone clocks*/
 #kr-newyork {
@@ -612,6 +665,44 @@ p {
 	}
 }
 /****************************************************************/
+/* textclock to timezone clock animation */
+@keyframes toggleTextClock {
+  0%, 49% {
+    visibility: visible;
+    opacity: 1;
+  }
+  50%, 51% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  52%, 98% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  99%, 100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes toggleTimezoneClock {
+  0%, 49% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  50%, 51% {
+    visibility: visible;
+    opacity: 1;
+  }
+  52%, 98% {
+    visibility: visible;
+    opacity: 1;
+  }
+  99%, 100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+/****************************************************************/
 /* text clock */
 .container-fluid-textclock {
   padding: 8.5% 15% 0.7% 14.5%;
@@ -620,7 +711,11 @@ p {
   top: 50%;
   margin-bottom: 19%;
   display: inline-block;
+  visibility: visible;
+  opacity: 1;
+  animation: toggleTextClock 30s infinite;
 }
+
 p,
 span {
   color: #333;
@@ -650,15 +745,7 @@ span.active {
   -webkit-transition: color 0.4s ease-out;
 }
 #is:after {
-  content: "IS";
-  animation: kr-is 18s linear infinite;
-  
-}
-@keyframes kr-is {
-  0%, 15% {content: "잼";}
-  16%, 59% {content: "IS";}
-  60%, 75% {content: "잼";}
-  76%, 100% {content: "IS";}
+  content: "";
 }
 
 #text-clock {
@@ -756,6 +843,7 @@ h1.top {
 }
 #main {
   opacity: 0;
+  margin-top: -15%;
   transition: 0.5s;
   color: white;
 }
@@ -777,7 +865,6 @@ h1.top {
   position: relative;
   padding: 0% 15% 0% 15%;
   width: 100%;
-  margin-bottom: -1.5%;
 }
 /****************************************************************/
 /* composition page */
@@ -789,7 +876,6 @@ h1.top {
   margin: 0;
   padding: 0;
 }
-
 /****************************************************************/
 /* questions bot page */
 .questions-section {
@@ -800,7 +886,8 @@ h1.top {
   margin: 0;
   padding: 0;
 }
-
+/****************************************************************/
+/*gallery*/
 img { 
   max-width: 100%;
   height: auto;
@@ -973,6 +1060,15 @@ img {
   }
   /********************************/
   /*index.html*/
+  /*index.html layout*/
+  .column {
+    width: 100%;
+  }
+  .left-bg {
+    height: 100%;
+    width: 100%;
+  }
+  /*index.html layout*/
   /* timezone clocks */
   .flex {
     display: grid;
@@ -995,18 +1091,29 @@ img {
     font-size: 9px;
     letter-spacing: 9px;
     padding-bottom: 8%;
+    display: none;
+  }
+  .container-fluid-timezone-mobile {
+    display: grid;
+    margin-top: 180%;
+    padding-bottom: 9%;
+  }
+  .mobile-only {
+    display: inline-flex;
   }
   /* globe */
   .container-fluid-globe {
-    margin-top: -8rem;
+    margin-top: -16rem;
     margin-bottom: -6%;
+    overflow-x: hidden;
   }
   /*flexbox city times*/
-  .childcity {
+  .childcity .citynameNY{
     padding: 0px 0px 15px 0px;
   }
   .cityname {
     padding: 0px;
+    margin-bottom: 1rem;
   }
   p,
   span {
@@ -1117,31 +1224,31 @@ img {
   .gallery {
     height: 317vw;
     .portfolio-image-one {
-      animation: image-one 30s infinite ease-in;
+      animation: image-one 24s infinite ease-in;
     }
     .portfolio-image-two {
-      animation: image-two 30s infinite linear;
+      animation: image-two 24s infinite linear;
     }
     .portfolio-image-three {
-      animation: image-three 30s infinite linear;
+      animation: image-three 24s infinite linear;
     }
     .portfolio-image-four {
-      animation: image-four 30s infinite linear;
+      animation: image-four 24s infinite linear;
     }
     .portfolio-image-five {
-      animation: image-five 30s infinite linear;
+      animation: image-five 24s infinite linear;
     }
     .portfolio-image-six {
-      animation: image-six 30s infinite linear;
+      animation: image-six 24s infinite linear;
     }
     .portfolio-image-seven {
-      animation: image-seven 30s infinite linear;
+      animation: image-seven 24s infinite linear;
     }
     .portfolio-image-eight {
-      animation: image-eight 30s infinite linear;
+      animation: image-eight 24s infinite linear;
     }
     .portfolio-image-nine {
-      animation: image-nine 30s infinite linear;
+      animation: image-nine 24s infinite linear;
     }
   }
 
