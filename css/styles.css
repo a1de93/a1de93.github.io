@@ -1065,8 +1065,8 @@ img {
     width: 100%;
   }
   .left-bg {
-    height: 112vh;
-    width: 100%;
+    height: 112vh; /*90*/
+    width: 100vw;
   }
   /*index.html layout*/
   /* timezone clocks */
