@@ -1232,6 +1232,7 @@ img {
 }
 #sfumato {
   top:87vh;
+  position: absolute;
 }
   /********************************/
   /*gallery*/
