@@ -127,19 +127,22 @@ body {
   scroll-behavior: smooth;
   overflow: auto;
   border-radius: 18px;
+  z-index: 1;
 }
 /* Track */
 ::-webkit-scrollbar-track {
   background: transparent;
   scroll-behavior: smooth;
-    overflow: auto;
+  overflow: auto;
+  z-index: 1;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #333;
   opacity: .1;
   scroll-behavior: smooth;
-    overflow: auto;
+  overflow: auto;
+  z-index: 1;
 }
 /****************************************************************/
 /*index.html*/
@@ -1228,7 +1231,7 @@ img {
     border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
 #sfumato {
-  top:87%;
+  top:87vh;
 }
   /********************************/
   /*gallery*/
