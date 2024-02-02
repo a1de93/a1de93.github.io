@@ -1170,7 +1170,7 @@ img {
     z-index: 9000;
   }
   .footer-link {
-    font-size: 270%;
+    font-size: 200%;
     right: 4.8%;
     bottom: 2.4%;
     letter-spacing: -0.001em;
@@ -1192,7 +1192,7 @@ img {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
   .footer-link:hover {
-    font-size: 270%;
+    font-size: 200%;
     /* border: solid 1px #99F3FF; */
     color: #000;
     border-radius: 50%;
