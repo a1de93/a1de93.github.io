@@ -1253,7 +1253,8 @@ img {
     border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
 #sfumato {
-  top: 81%; /*81vh*/
+  top: 87%; /*81vh*/
+  position: fixed;
 }
   /********************************/
   /*gallery*/
