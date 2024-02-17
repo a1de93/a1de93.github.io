@@ -392,9 +392,9 @@ body {
   font-size: 145%;
   border: solid 1px none;
   border-radius: 21px;
-  padding: 3.3px 18px 3.3px 18px;
+  padding: 3px 15px 0px 15px;
   letter-spacing: -12.1px;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
 
   /*glassmorphism*/
   background: rgba( 255, 255, 255, 0.15 );
@@ -411,7 +411,6 @@ body {
   background: rgba( 255, 255, 255, 0.3 );
   opacity: .9;
   transition: 0.3s;
-  padding: 3.6px 18px 3.6px 18px;
 }
 
 @keyframes bgcolor {
@@ -817,20 +816,16 @@ span.active {
 }
 
 .footer-link {
-  font-size: 290%;
-  /* padding: 3.9px 18px 3.9px 18px; */
-  padding: 0px 8px;
+  font-size: 180%;
+  padding: 2px 9px 0px 9px;
   position: fixed;
   bottom: 3%;
   right: 1.5%;
   z-index: 9000;
-  /* border-radius: 21px; */
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 51px;
+  height: 51px;
   border: solid 1px transparent;
-  /* letter-spacing: -12.1px;
-  letter-spacing: 0.3em; */
   text-align: center;
 
   /*glassmorphism*/
@@ -1125,6 +1120,7 @@ img {
     margin-top: -31vh;
     margin-bottom: -6%;
     overflow-x: hidden;
+    /* overflow-y: hidden; */
   }
   /*flexbox city times*/
   .childcity {
@@ -1257,7 +1253,7 @@ img {
     border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
 #sfumato {
-  top: 87vh;
+  top: 81%; /*81vh*/
 }
   /********************************/
   /*gallery*/
