@@ -1166,17 +1166,13 @@ img {
     z-index: 9000;
   }
   .footer-link {
-    font-size: 197%;
+    font-size: 190%;
     right: 4.8%;
     bottom: 2.4%;
-    letter-spacing: -0.001em;
-    /* border-radius: 21px; */
     border-radius: 50%;
-    letter-spacing: -12.1px;
-    letter-spacing: 0.2em;
     width: 54px;
     height: 54px;
-    padding: 3px 10px 0px 10px;
+    padding: 3px 10px;
 
     /*glassmorphism*/
     /* background: rgba( 255, 255, 255, 0.15 ); */
