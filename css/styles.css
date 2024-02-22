@@ -1166,13 +1166,13 @@ img {
     z-index: 9000;
   }
   .footer-link {
-    font-size: 190%;
+    font-size: 180%;
     right: 4.8%;
     bottom: 2.4%;
     border-radius: 50%;
     width: 54px;
     height: 54px;
-    padding: 3px 10px;
+    padding: 5px 12px;
 
     /*glassmorphism*/
     /* background: rgba( 255, 255, 255, 0.15 ); */
@@ -1184,7 +1184,7 @@ img {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
   .footer-link:hover {
-    font-size: 200%;
+    font-size: 180%;
     /* border: solid 1px #99F3FF; */
     color: #000;
     border-radius: 50%;
