@@ -1172,7 +1172,8 @@ img {
     border-radius: 50%;
     width: 54px;
     height: 54px;
-    padding: 5px 12px;
+    padding: 3px 12px;
+    text-align: center;
 
     /*glassmorphism*/
     /* background: rgba( 255, 255, 255, 0.15 ); */
