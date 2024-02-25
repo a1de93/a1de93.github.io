@@ -1,8 +1,17 @@
+
+// if current styling is *hidden* then change to visible, otherwise change to hidden
+// document.querySelector(".index-body").style.position = document.querySelector(".index-body").style.position === 'unset' ? 'sticky' : 'unset';
+// document.querySelector(".index-body").classList.toggle('no-scroll');
+
 //navbar
 const btn = document.querySelector(".btn");
-btn.addEventListener("click",()=>{
-    document.body.classList.toggle("active");
+btn.addEventListener("click",(event)=>{
+  event.preventDefault();
+  document.body.classList.toggle("active");
+  document.querySelector("html").classList.toggle('no-scroll');
+  document.querySelector("body").classList.toggle('no-scroll');
 });
+
 
 //loading animation screen
 window.addEventListener("load", () => {
@@ -76,3 +85,20 @@ elImages.forEach(figure => {
     elDetail.addEventListener('click',revert);
   });
 });
+
+//toggle textclock and timezone clocks
+function toggleClocks(){
+  //get clock
+  let textClock  = document.getElementsByClassName("container-fluid-textclock");
+  let timezoneClock = document.getElementsByClassName("container-fluid-timezone");
+
+  //get current value of the clock's display property
+  let textClockDisplaySetting = textClock.style.display;
+  let timezoneClockDisplaySetting = timezoneClock.style.display;
+
+  setTimeout(() => {
+    textClock.style.display = "none";
+    timezoneClock.style.display = "none";
+  }, 2000);
+}
+toggleClocks();
