@@ -1325,6 +1325,11 @@ img {
   hr {
     margin: 6px -30px;
   }
+  .modal-container {
+    right: -2%;
+    bottom: 0%;
+  }
+  /********************************/
   /*index.html*/
   /*index.html layout*/
   .three-columns-grid {
