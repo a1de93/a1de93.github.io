@@ -183,7 +183,7 @@ body {
 .modal-title {
   font-family: "Poppins";
   color: #A0B79B;
-  padding-top: 33px;
+  padding-top: 24px;
   text-align: center;
 }
 .modal-container .modal-btn {
@@ -211,7 +211,7 @@ hr {
   margin: 6px -30px;
 }
 .modal-text {
-  padding-top: 12px;
+  padding-top: 9px;
   margin: 0px 9px;
   letter-spacing: -0.01em !important;
   line-height: 30px;
@@ -288,7 +288,7 @@ a, a:after, a:hover, a:visited, a:link, a:active {
 }
 .modal-container #modal-toggle.active ~ .modal-backdrop, .modal-container #modal-toggle:checked ~ .modal-backdrop {
   /* background: rgb(245, 245, 245, 0.6); */
-  background: rgba(160, 183, 155, 0.6);
+  background: rgba(160, 183, 155, 0.7);
   /* background: rgba(222, 180, 201, 0.6); */
   backdrop-filter: blur( 21px );
   -webkit-backdrop-filter: blur( 21px );
@@ -306,7 +306,7 @@ a, a:after, a:hover, a:visited, a:link, a:active {
   opacity: 1;
   max-width: 425px;
   width: 300px;
-  height: 230px;
+  height: 208px;
   padding: 10px 30px;
   position: fixed;
   left: 50%;
