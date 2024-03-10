@@ -216,7 +216,19 @@
       </div>
     </div>
     <!-- footer link button -->
-    <p class="footer-link"><a href="https://www.twitter.com/questionsbot369" style="text-decoration: none;">🌱</a></p>
+    <div class="modal-container">
+      <input id="modal-toggle" type="checkbox">
+      <label class="modal-btn" for="modal-toggle">🌱</label> 
+      <label class="modal-backdrop" for="modal-toggle"></label>
+      <div class="modal-content">
+        <label class="modal-close" for="modal-toggle">&#x2715;</label>
+        <p class="modal-title">going to project...</p><hr/>
+        <p class="modal-text">you are about to leave this website. are you sure?</p> 
+        <label class="modal-content-btn yes-button"><a href="https://www.twitter.com/questionsbot369">yes</a></label>
+        <label class="modal-content-btn no-button" for="modal-toggle">no</label>
+      </div>          
+    </div>
+    <!-- footer link button -->
     <!-- content -->
     <!-- scripts -->
     <script src="navbar.js"></script>
