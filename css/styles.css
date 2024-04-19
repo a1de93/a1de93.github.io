@@ -70,10 +70,10 @@ body {
 .bottom-text {
   color: #FFF;
   text-align: left;
-  background: -webkit-linear-gradient(right, #99F3FF, #FFFFFF);
+  /* background: -webkit-linear-gradient(right, #99F3FF, #FFFFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-decoration: none;
+  text-decoration: none; */
 }
 
 .bottom-section {
