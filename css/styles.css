@@ -70,10 +70,14 @@ body {
 .bottom-text {
   color: #FFF;
   text-align: left;
+  font-size: 12px !important;
   /* background: -webkit-linear-gradient(right, #99F3FF, #FFFFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none; */
+}
+.bottom-text a:hover {
+  color: #A0B79B;
 }
 
 .bottom-section {
@@ -81,9 +85,9 @@ body {
 }
 
 .emoticon {
-  text-align: center;
+  text-align: left;
   text-decoration: none;
-  font-size: 145%;
+  font-size: 90%;
   opacity: .7;
 }
 /****************************************************************/
